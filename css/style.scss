@@ -1,0 +1,158 @@
+@import "../bootstrap/bootstrap-4.3.1/scss/_functions.scss";
+@import "../bootstrap/bootstrap-4.3.1/scss/_variables.scss";
+@import "../bootstrap/bootstrap-4.3.1/scss/mixins/_breakpoints.scss";
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "San Francisco bold";
+  font-weight: 400;
+  src: url("../ressources/sf-pro-text_semibold.woff2");
+}
+
+$d: 900ms;
+
+body, html, header, h1{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  font-family: "San Francisco";
+}
+
+h1{
+  font-family: "San Francisco bold";
+}
+
+header, body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.8) 100%), url("../ressources/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+}
+
+#scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: -100px;
+  opacity: 0.5;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  background-color:rgb(51,51,51);
+  transition: opacity $d ease-out, visibility 0ms linear $d, bottom $d ease-out;
+}
+
+.isLoading{
+  .loader {
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+#mainNav {
+  box-shadow: $box-shadow;
+  background-color: #333333;
+  transition: background-color 0.3s ease;
+  .navbar-brand {
+    font-family: "San Francisco bold";
+    color: #FFFFFF;
+    &:hover{
+      color: #CCCCCC;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #FFFFFF;
+        font-family: "San Francisco bold";
+        padding: 0.75rem 0;
+        &:hover, &:active {
+          color: #CCCCCC;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    // Base styling for the navbar - screen sizes greater than the large breakpoint
+    box-shadow: none;
+    background-color: transparent;
+    .navbar-brand {
+      color: #FFFFFF;
+      &:hover {
+        color: #CCCCCC;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: #FFFFFF;
+          padding: 0 1rem;
+          &:hover {
+            color: #CCCCCC;
+          }
+        }
+        &:last-child {
+          .nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    // Navbar styling applied when the page is scrolled
+    &.navbar-scrolled {
+      box-shadow: $box-shadow;
+      background-color: #333333;
+      .navbar-brand {
+        color: #FFFFFF;
+        &:hover {
+          color: #CCCCCC;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #FFFFFF;
+            &:hover {
+              color: #CCCCCC;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.img-fluid {
+  padding-top: 15rem;
+  width: 65%;
+}
+
+.oui {
+  transform: translate3d(1.5rem, -1.5rem, 1rem);
+}

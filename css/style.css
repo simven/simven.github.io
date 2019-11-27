@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "San Francisco bold";
+  font-weight: 400;
+  src: url("../ressources/sf-pro-text_semibold.woff2");
+}
+
+body, html, header, h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "San Francisco";
+}
+
+h1 {
+  font-family: "San Francisco bold";
+}
+
+header, body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../ressources/bg.jpg");
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.8) 100%), url("../ressources/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: -100px;
+  opacity: 0.5;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  background-color: #333333;
+  -webkit-transition: opacity 900ms ease-out, visibility 0ms linear 900ms, bottom 900ms ease-out;
+  transition: opacity 900ms ease-out, visibility 0ms linear 900ms, bottom 900ms ease-out;
+}
+
+.isLoading .loader {
+  bottom: 0;
+  visibility: visible;
+}
+
+#mainNav {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #333333;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+#mainNav .navbar-brand {
+  font-family: "San Francisco bold";
+  color: #FFFFFF;
+}
+
+#mainNav .navbar-brand:hover {
+  color: #CCCCCC;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #FFFFFF;
+  font-family: "San Francisco bold";
+  padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #CCCCCC;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: #FFFFFF;
+  }
+  #mainNav .navbar-brand:hover {
+    color: #CCCCCC;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: #FFFFFF;
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #CCCCCC;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNav.navbar-scrolled {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #333333;
+  }
+  #mainNav.navbar-scrolled .navbar-brand {
+    color: #FFFFFF;
+  }
+  #mainNav.navbar-scrolled .navbar-brand:hover {
+    color: #CCCCCC;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #FFFFFF;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: #CCCCCC;
+  }
+}
+
+.img-fluid {
+  padding-top: 15rem;
+  width: 65%;
+}
+
+.oui {
+  -webkit-transform: translate3d(1.5rem, -1.5rem, 1rem);
+          transform: translate3d(1.5rem, -1.5rem, 1rem);
+}
+/*# sourceMappingURL=style.css.map */
