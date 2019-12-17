@@ -1,13 +1,19 @@
 @font-face {
   font-family: "San Francisco";
-  font-weight: 400;
+  color: #fff;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 @font-face {
   font-family: "San Francisco bold";
-  font-weight: 400;
+  color: #fff;
   src: url("../ressources/sf-pro-text_semibold.woff2");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  color: #fff;
+  src: url("../ressources/Helvetica.ttf");
 }
 
 body, html, header, h1 {
@@ -20,7 +26,8 @@ body {
 }
 
 h1 {
-  font-family: "San Francisco bold";
+  font-family: "Helvetica";
+  font-size: 4rem;
 }
 
 header, body, html {
@@ -41,7 +48,17 @@ header, body, html {
   position: fixed;
   bottom: 30px;
   right: -100px;
-  opacity: 0.5;
+  opacity: 0.7;
+  font-size: 2rem;
+}
+
+.fa-chevron-up {
+  color: #333333;
+}
+
+.fa-chevron-up:hover {
+  color: #64C6C8;
+  text-decoration: none;
 }
 
 .head {
@@ -75,22 +92,18 @@ header, body, html {
 }
 
 #mainNav .navbar-brand {
-  font-family: "San Francisco bold";
-  color: #FFFFFF;
-}
-
-#mainNav .navbar-brand:hover {
-  color: #CCCCCC;
+  color: #64C6C8;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #FFFFFF;
-  font-family: "San Francisco bold";
+  font-family: "Montserrat", sans-serif;
   padding: 0.75rem 0;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #CCCCCC;
+  color: #64C6C8;
 }
 
 @media (min-width: 992px) {
@@ -100,17 +113,16 @@ header, body, html {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: #FFFFFF;
-  }
-  #mainNav .navbar-brand:hover {
-    color: #CCCCCC;
+    color: #64C6C8;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: #FFFFFF;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #CCCCCC;
+    color: #64C6C8;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -121,26 +133,39 @@ header, body, html {
     background-color: #333333;
   }
   #mainNav.navbar-scrolled .navbar-brand {
-    color: #FFFFFF;
+    color: #64C6C8;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #CCCCCC;
+    color: #64C6C8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #FFFFFF;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #CCCCCC;
+    color: #64C6C8;
   }
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  background-color: #64C6C8;
+}
+
+.btn:hover {
+  background-color: #64C6C8;
+}
+
+.fa-angle-double-down {
+  color: #CCCCCC;
+}
+
+.fa-angle-double-down:hover {
+  color: #64C6C8;
+  text-decoration: none;
 }
 
 .img-fluid {
   padding-top: 15rem;
   width: 65%;
-}
-
-.oui {
-  -webkit-transform: translate3d(1.5rem, -1.5rem, 1rem);
-          transform: translate3d(1.5rem, -1.5rem, 1rem);
 }
 /*# sourceMappingURL=style.css.map */

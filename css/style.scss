@@ -4,17 +4,27 @@
 
 @font-face {
   font-family: "San Francisco";
-  font-weight: 400;
+  color: $white;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
+
 @font-face {
   font-family: "San Francisco bold";
-  font-weight: 400;
+  color: $white;
   src: url("../ressources/sf-pro-text_semibold.woff2");
 }
 
+@font-face {
+  font-family: "Helvetica";
+  color: $white;
+  src: url("../ressources/Helvetica.ttf");
+}
+
 $d: 900ms;
+$blue: #64C6C8;
+$white: #FFFFFF;
+$dark: #333333;
 
 body, html, header, h1{
   margin: 0px;
@@ -26,7 +36,8 @@ body{
 }
 
 h1{
-  font-family: "San Francisco bold";
+  font-family: "Helvetica";
+  font-size: 4rem;
 }
 
 header, body, html {
@@ -40,14 +51,22 @@ header, body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-
 }
 
 #scrollUp {
   position: fixed;
   bottom: 30px;
   right: -100px;
-  opacity: 0.5;
+  opacity: 0.7;
+  font-size: 2rem;
+}
+
+.fa-chevron-up{
+  color: $dark;
+  &:hover{
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
 .head {
@@ -62,36 +81,33 @@ header, body, html {
   right: 0;
   bottom: 100%;
   left: 0;
-  background-color:rgb(51,51,51);
+  background-color: $dark;
   transition: opacity $d ease-out, visibility 0ms linear $d, bottom $d ease-out;
 }
 
 .isLoading{
   .loader {
     bottom: 0;
-    visibility: visible;
+    visibility: visible; 
   }
 }
 
 #mainNav {
   box-shadow: $box-shadow;
-  background-color: #333333;
+  background-color: $dark;
   transition: background-color 0.3s ease;
   .navbar-brand {
-    font-family: "San Francisco bold";
-    color: #FFFFFF;
-    &:hover{
-      color: #CCCCCC;
-    }
+    color: $blue;
+    font-family: 'Shadows Into Light', cursive;
   }
   .navbar-nav {
     .nav-item {
       .nav-link {
-        color: #FFFFFF;
-        font-family: "San Francisco bold";
+        color: $white;
+        font-family: "Montserrat", sans-serif;
         padding: 0.75rem 0;
         &:hover, &:active {
-          color: #CCCCCC;
+          color: $blue;
         }
       }
     }
@@ -102,18 +118,17 @@ header, body, html {
     box-shadow: none;
     background-color: transparent;
     .navbar-brand {
-      color: #FFFFFF;
-      &:hover {
-        color: #CCCCCC;
-      }
+      color: $blue;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 2rem;
     }
     .navbar-nav {
       .nav-item {
         .nav-link {
-          color: #FFFFFF;
+          color: $white;
           padding: 0 1rem;
           &:hover {
-            color: #CCCCCC;
+            color: $blue;
           }
         }
         &:last-child {
@@ -126,19 +141,19 @@ header, body, html {
     // Navbar styling applied when the page is scrolled
     &.navbar-scrolled {
       box-shadow: $box-shadow;
-      background-color: #333333;
+      background-color: $dark;
       .navbar-brand {
-        color: #FFFFFF;
+        color: $blue;
         &:hover {
-          color: #CCCCCC;
+          color: $blue;
         }
       }
       .navbar-nav {
         .nav-item {
           .nav-link {
-            color: #FFFFFF;
+            color: $white;
             &:hover {
-              color: #CCCCCC;
+              color: $blue;
             }
           }
         }
@@ -147,12 +162,23 @@ header, body, html {
   }
 }
 
+.btn{
+  font-family: "Montserrat", sans-serif;
+  background-color: $blue;
+  &:hover{
+    background-color: $blue;
+  }
+}
+
+.fa-angle-double-down{
+  color:#CCCCCC;
+  &:hover{
+    color: $blue;
+    text-decoration: none;
+  }
+}
 
 .img-fluid {
   padding-top: 15rem;
   width: 65%;
-}
-
-.oui {
-  transform: translate3d(1.5rem, -1.5rem, 1rem);
 }
