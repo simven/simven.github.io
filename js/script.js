@@ -1,3 +1,4 @@
+
 window.addEventListener('load',function(){
   document.getElementById('main-id').classList.remove('isLoading');
 });
@@ -25,9 +26,10 @@ jQuery(function () {
         var target = $(this).attr('href');
         $('html, body')
             .stop()
-            .animate({scrollTop: $(target).offset().top -45}, 1000);
+            .animate({scrollTop: $(target).offset().top -90}, 1000);
     });
   });
+
 
 
   // Ferme le menu responsive quand on clique sur un lien
