@@ -27,7 +27,6 @@ body {
 
 h1 {
   font-family: "Helvetica";
-  font-size: 4rem;
 }
 
 header, body, html {
@@ -42,6 +41,12 @@ header, body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+
+@media (min-width: 768px) {
+  .head h1 {
+    font-size: 3rem;
+  }
 }
 
 #scrollUp {
@@ -59,11 +64,6 @@ header, body, html {
 .fa-chevron-up:hover {
   color: #64C6C8;
   text-decoration: none;
-}
-
-.head {
-  width: 100%;
-  height: 100%;
 }
 
 .loader {
