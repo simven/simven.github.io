@@ -8,12 +8,13 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-
+/*
 @font-face {
   font-family: "San Francisco bold";
   color: $white;
   src: url("../ressources/sf-pro-text_semibold.woff2");
 }
+*/
 
 @font-face {
   font-family: "Helvetica";
@@ -21,10 +22,12 @@
   src: url("../ressources/Helvetica.ttf");
 }
 
+
 $d: 900ms;
 $blue: #64C6C8;
 $white: #FFFFFF;
-$dark: #333333;
+//$dark: #333333;
+$dark: rgb(53,58,63);
 
 body, html, header, h1{
   margin: 0px;
@@ -44,6 +47,10 @@ header, body, html {
   height: 100%;
 }
 
+::selection{
+  background-color: $blue;
+}
+
 .head {
   background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.8) 100%), url("../ressources/bg.jpg");
   background-size: cover;
@@ -56,6 +63,7 @@ header, body, html {
       font-size: 3rem;
     }
   }
+  
 }
 
 #scrollUp {
@@ -83,6 +91,7 @@ header, body, html {
   bottom: 100%;
   left: 0;
   background-color: $dark;
+  z-index: 3;
   transition: opacity $d ease-out, visibility 0ms linear $d, bottom $d ease-out;
 }
 
@@ -107,7 +116,7 @@ header, body, html {
         color: $white;
         font-family: "Montserrat", sans-serif;
         padding: 0.75rem 0;
-        &:hover, &:active {
+        &:hover, &.active{
           color: $blue;
         }
       }
@@ -166,8 +175,17 @@ header, body, html {
 .btn{
   font-family: "Montserrat", sans-serif;
   background-color: $blue;
+  color: $white;
+  box-shadow: none;
   &:hover{
     background-color: $blue;
+    color: $dark;
+    box-shadow: none;
+  }
+  &:before{
+    background-color: $blue;
+    color: $dark;
+    box-shadow: none;
   }
 }
 
@@ -179,7 +197,202 @@ header, body, html {
   }
 }
 
-.img-fluid {
-  padding-top: 15rem;
-  width: 65%;
+.fa-angle-double-down {
+  font-size: 4rem;
 }
+
+.fa-circle {
+  color: $blue;
+}
+
+.fa-bars {
+  color: $blue;
+}
+
+
+section {
+  padding: 100px;
+}
+
+#contact{
+  background-color: rgb(34, 37, 41);
+  color: white;
+}
+
+.form-control{
+  padding: 1.5rem;
+  background-color: $dark;
+  border: none;
+  &:focus{
+    background-color: $blue;
+    color: black;
+    box-shadow: none;
+  }
+}
+
+
+
+
+
+#project{
+  .portfolio-item{
+      right:0;margin:0 0 15px
+  }
+}
+
+#project{
+  .portfolio-item{
+      .portfolio-link{
+          position:relative;
+          display:block;
+          max-width:400px;
+          margin:0 auto;
+          cursor:pointer
+      }
+  }
+}  
+
+#project{
+  .portfolio-item{
+      .portfolio-link{
+          .portfolio-hover{
+              position:absolute;
+              width:100%;
+              height:100%;
+              transition:all .5s ease;
+              opacity:0;
+              background: $blue;
+          }
+      }
+  }
+}   
+
+#project{
+  .portfolio-item{
+      .portfolio-link {
+          .portfolio-hover:hover{
+              opacity:0.9;
+          }
+      }
+  }
+}  
+
+#project{
+  .portfolio-item{
+      .portfolio-link {
+          .portfolio-hover{
+              .portfolio-hover-content{
+                  font-size:20px;
+                  position:absolute;
+                  top:50%;
+                  width:100%;
+                  height:20px;
+                  margin-top:-12px;
+                  text-align:center;
+                  color:#CCCCCC;
+              }
+          } 
+      }
+  } 
+} 
+
+#project{
+  .portfolio-item{
+      .portfolio-link{
+          .portfolio-hover{
+              .portfolio-hover-content i{
+                  margin-top:-12px
+              }
+          }
+      }
+  }   
+} 
+
+#project{
+  .portfolio-item{
+      .portfolio-link {
+          .portfolio-hover{
+              .portfolio-hover-content{
+                  h3, h4{
+                      margin:0
+                  } 
+              }
+          } 
+      }
+  } 
+} 
+
+#project {
+  .portfolio-item{
+      .portfolio-caption{
+          max-width:400px;
+          margin:0 auto;
+          padding:25px;
+          text-align:center;
+          background-color: rgb(248, 248, 248);
+      }
+  } 
+}
+
+#project{
+  .portfolio-item{
+      .portfolio-caption{
+          h4{
+              margin:0;
+              text-transform:none
+          }
+      }
+  }
+}   
+
+#project{
+  .portfolio-item{
+      .portfolio-caption{
+          p{
+              font-size:16px;
+              font-style:italic;
+              margin:0;
+          }
+      }
+  }
+}
+
+#project *{
+  z-index:2
+}
+
+
+@media (min-width:767px){
+  #project{
+      .portfolio-item{
+          margin:0 0 30px
+      }
+  }
+} 
+
+
+.portfolio-modal{padding-right:0!important}
+
+.portfolio-modal .modal-dialog{margin:1rem;max-width:100vw}
+
+.portfolio-modal .modal-content{padding:100px 0;text-align:center}
+
+.portfolio-modal .modal-content h2{font-size:3em;margin-bottom:15px}
+
+.portfolio-modal .modal-content p{margin-bottom:30px}
+
+.portfolio-modal .modal-content p.item-intro{font-size:16px;font-style:italic;margin:20px 0 30px;font-family:Droid Serif,Helvetica Neue,Helvetica,Arial,sans-serif}
+
+.portfolio-modal .modal-content ul.list-inline{margin-top:0;margin-bottom:30px}
+
+.portfolio-modal .modal-content img{margin-bottom:30px}
+
+.portfolio-modal .modal-content button{cursor:pointer}
+
+.portfolio-modal .close-modal{position:absolute;top:25px;right:25px;width:75px;height:75px;cursor:pointer;background-color:transparent}
+
+.portfolio-modal .close-modal:hover{opacity:.3}
+
+.portfolio-modal .close-modal .lr{z-index:1051;width:1px;height:75px;margin-left:35px;-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#212529}
+
+.portfolio-modal .close-modal .lr .rl{z-index:1052;width:1px;height:75px;-webkit-transform:rotate(90deg);transform:rotate(90deg);background-color:#212529}
