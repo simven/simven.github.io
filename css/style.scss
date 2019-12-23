@@ -230,13 +230,17 @@ section {
   }
 }
 
-
+.close {
+  &:hover{
+    color: $blue;
+  }
+}
 
 
 
 #project{
   .portfolio-item{
-      right:0;margin:0 0 15px
+      right:0;margin:0 0 15px;
   }
 }
 
@@ -247,7 +251,6 @@ section {
           display:block;
           max-width:400px;
           margin:0 auto;
-          cursor:pointer
       }
   }
 }  
@@ -289,7 +292,7 @@ section {
                   height:20px;
                   margin-top:-12px;
                   text-align:center;
-                  color:#CCCCCC;
+                  color:#FFFFFF;
               }
           } 
       }
@@ -301,7 +304,7 @@ section {
       .portfolio-link{
           .portfolio-hover{
               .portfolio-hover-content i{
-                  margin-top:-12px
+                  margin-top:-12px;
               }
           }
       }
@@ -314,7 +317,7 @@ section {
           .portfolio-hover{
               .portfolio-hover-content{
                   h3, h4{
-                      margin:0
+                    margin:0;
                   } 
               }
           } 
@@ -358,7 +361,7 @@ section {
 }
 
 #project *{
-  z-index:2
+  z-index:2;
 }
 
 
@@ -371,28 +374,122 @@ section {
 } 
 
 
-.portfolio-modal{padding-right:0!important}
 
-.portfolio-modal .modal-dialog{margin:1rem;max-width:100vw}
+.portfolio-modal{
+  padding-right:0!important
+}
 
-.portfolio-modal .modal-content{padding:100px 0;text-align:center}
+// largeur popup
+.portfolio-modal .modal-dialog{
+  margin: 3rem, auto;
+  max-width:60vw;
+}
 
-.portfolio-modal .modal-content h2{font-size:3em;margin-bottom:15px}
+.portfolio-modal{
+  .modal-dialog{
+    .modal-content{
+      padding: 50px;
+    }
+  }
+}
 
-.portfolio-modal .modal-content p{margin-bottom:30px}
+.portfolio-modal .modal-content h2{
+  font-size:2em;
+  margin-bottom:15px
+}
 
-.portfolio-modal .modal-content p.item-intro{font-size:16px;font-style:italic;margin:20px 0 30px;font-family:Droid Serif,Helvetica Neue,Helvetica,Arial,sans-serif}
+.portfolio-modal .modal-content p{
+  margin-bottom:30px
+}
 
-.portfolio-modal .modal-content ul.list-inline{margin-top:0;margin-bottom:30px}
+.portfolio-modal .modal-content p.item-intro{
+  font-size:16px;
+  font-style:italic;
+  margin:20px 0 30px;
+}
 
-.portfolio-modal .modal-content img{margin-bottom:30px}
+//espace après l'image
+.portfolio-modal{
+  .modal-content{
+    img{
+      margin-bottom:30px;
+    }
+  }
+}
 
-.portfolio-modal .modal-content button{cursor:pointer}
+.portfolio-modal .close-modal{
+  position:absolute;
+  top:25px;
+  right:25px;
+  width:75px;
+  height:75px;
+  cursor:pointer;
+  background-color:transparent
+}
 
-.portfolio-modal .close-modal{position:absolute;top:25px;right:25px;width:75px;height:75px;cursor:pointer;background-color:transparent}
+.portfolio-modal .close-modal:hover{
+  opacity:.3
+}
 
-.portfolio-modal .close-modal:hover{opacity:.3}
 
-.portfolio-modal .close-modal .lr{z-index:1051;width:1px;height:75px;margin-left:35px;-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#212529}
 
-.portfolio-modal .close-modal .lr .rl{z-index:1052;width:1px;height:75px;-webkit-transform:rotate(90deg);transform:rotate(90deg);background-color:#212529}
+
+
+/* Timeline */
+.timeline {
+  margin: 3em auto;
+  position: relative;
+  max-width: 46em;
+}
+
+.timeline:before {
+  background-color: $dark;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  left: 2em;
+  width: 2px;
+  height: 98%;
+}
+
+.timeline-event:hover {
+  .timeline-event-icon {
+    transform: rotate(-45deg);
+    background-color: $blue;
+  }
+}
+
+.timeline-event:hover {
+  .timeline-event-thumbnail {
+    box-shadow: inset 40em 0 0 0 $blue;
+  }
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+}
+
+
+.timeline-event-icon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+  background-color: $dark;
+  outline: 10px solid white;
+  margin: 0.5em -0.5em;
+  position: absolute;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: $white;
+  background-color: $dark;
+  box-shadow: inset 0 0 0 0em $blue;
+  display: inline-block;
+  padding: 0.2em 1em;
+}

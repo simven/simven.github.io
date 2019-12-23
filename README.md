@@ -1,1 +1,0 @@
-Portfolio de Simon Vennat
