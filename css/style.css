@@ -55,6 +55,12 @@ section {
   padding: 6rem;
 }
 
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
 #scrollUp {
   position: fixed;
   right: -100px;

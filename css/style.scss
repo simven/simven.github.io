@@ -72,6 +72,12 @@ section {
   padding: 6rem;
 }
 
+@media (min-width:768px){
+  section{
+    padding:150px 0
+  }
+}
+
 // ===================== Bouton top page =====================
 #scrollUp {
   position: fixed;
