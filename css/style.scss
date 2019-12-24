@@ -2,6 +2,23 @@
 @import "../bootstrap/scss/_variables.scss";
 @import "../bootstrap/scss/mixins/_breakpoints.scss";
 
+
+/*
+1. FONTS
+2. VARIABLES
+3. GLOBAL
+4. NAVBAR
+5. HEADER
+6. À PROPOS
+7. COMPÉTENCES
+8. FORMATION
+9. PROJETS
+10. CONTACT
+*/
+
+
+// FONTS \\
+
 @font-face {
   font-family: "San Francisco";
   color: $white;
@@ -23,18 +40,18 @@
 }
 
 
+// VARIABLES \\
+
 $d: 900ms;
 $blue: #64C6C8;
 $white: #FFFFFF;
 $dark: #353A3F;
-$black: rgb(34, 37, 41);
+$grey: #CCCCCC;
+$black: #222529;
 
-/*
-body, html, header, h1{
-  margin: 0px;
-  padding: 0px;
-}
-*/
+
+
+// GLOBAL \\
 body{
   font-family: "San Francisco";
 }
@@ -52,38 +69,32 @@ header, body, html {
   background-color: $blue;
 }
 
-.head {
-  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.8) 0%, rgba(51, 51, 51, 0.8) 100%), url("../ressources/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-
-  @include media-breakpoint-up(md){
-    h1{
-      font-size: 3rem;
-    }
-  }
-  
+section {
+  padding: 6rem;
 }
 
+// ===================== Bouton top page =====================
 #scrollUp {
   position: fixed;
-  bottom: 30px;
   right: -100px;
-  opacity: 0.7;
-  font-size: 2rem;
+  bottom: 50px;
 }
 
-.fa-chevron-up{
+.current-top{
+  transition: all 0.5s ease;
   color: $dark;
-  &:hover, &:focus{
+  font-size: 2rem;
+  opacity: 0.6;
+  &:hover {
     color: $blue;
     text-decoration: none;
+    opacity: 1;
   }
 }
+// ===========================================================
 
 
+// ===================== Chargement de la page =====================
 .loader {
   visibility: hidden;
   position: fixed;
@@ -102,11 +113,35 @@ header, body, html {
     visibility: visible; 
   }
 }
+// ===========================================================
+
+
+// ===================== Style des boutons =====================
+.btn{
+  font-family: "Montserrat", sans-serif;
+  background-color: $blue;
+  color: $white;
+  box-shadow: none;
+  &:hover, &:active {
+    background-color: $blue;
+    color: $dark;
+    box-shadow: none;
+  }
+  &:before{
+    background-color: $blue;
+    color: $dark;
+    box-shadow: none;
+  }
+}
+// ===========================================================
+
+
+
+// NAVBAR \\
 
 #mainNav {
   box-shadow: $box-shadow;
   background-color: $dark;
-  transition: background-color 0.3s ease;
   .navbar-brand {
     color: $blue;
     font-family: 'Shadows Into Light', cursive;
@@ -125,9 +160,7 @@ header, body, html {
   }
 
   @include media-breakpoint-up(lg) {
-    // Base styling for the navbar - screen sizes greater than the large breakpoint
     box-shadow: none;
-    background-color: transparent;
     .navbar-brand {
       color: $blue;
       font-family: 'Shadows Into Light', cursive;
@@ -149,58 +182,7 @@ header, body, html {
         }
       }
     }
-    // Navbar styling applied when the page is scrolled
-    &.navbar-scrolled {
-      box-shadow: $box-shadow;
-      background-color: $dark;
-      .navbar-brand {
-        color: $blue;
-        &:hover {
-          color: $blue;
-        }
-      }
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            color: $white;
-            &:hover, &:focus {
-              color: $blue;
-            }
-          }
-        }
-      }
-    }
   }
-}
-
-.btn{
-  font-family: "Montserrat", sans-serif;
-  background-color: $blue;
-  color: $white;
-  box-shadow: none;
-  &:hover, &:focus{
-    background-color: $blue;
-    color: $dark;
-    box-shadow: none;
-  }
-  &:before{
-    background-color: $blue;
-    color: $dark;
-    box-shadow: none;
-  }
-}
-
-.fa-angle-double-down{
-  color:#CCCCCC;
-  font-size: 4rem;
-  &:hover, &:focus{
-    color: $blue;
-    text-decoration: none;
-  }
-}
-
-.rond {
-  color: $blue;
 }
 
 .fa-bars {
@@ -208,33 +190,108 @@ header, body, html {
 }
 
 
-section {
-  padding: 100px;
-}
 
-#contact{
-  background-color: $black;
-  color: white;
-}
+// HEADER \\
 
-.form-control{
-  padding: 1.5rem;
-  background-color: $dark;
-  border: none;
-  &:focus{
-    background-color: $blue;
-    color: black;
-    box-shadow: none;
+.head {
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.9) 0%, rgba(51, 51, 51, 0.9) 100%), url("../ressources/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  @include media-breakpoint-up(md){
+    h1{
+      font-size: 3rem;
+    }
   }
 }
 
-.close {
-  &:hover{
+.fa-angle-double-down{
+  transition: all 0.5s ease;
+  color: $grey;
+  font-size: 4rem;
+  &:hover {
     color: $blue;
+    text-decoration: none;
   }
 }
 
 
+// À PROPOS \\
+
+
+
+// COMPÉTENCES \\
+
+.rond {
+  color: $blue;
+}
+
+
+
+// FORMATION - Timeline \\
+
+.timeline {
+  margin: 3em auto;
+  position: relative;
+  max-width: 46em;
+}
+
+.timeline:before {
+  background-color: $dark;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  left: 2em;
+  width: 2px;
+  height: 98%;
+}
+
+.timeline-event:hover {
+  .timeline-event-icon {
+    transform: rotate(-45deg);
+    background-color: $blue;
+  }
+}
+
+.timeline-event:hover {
+  .timeline-event-thumbnail {
+    box-shadow: inset 40em 0 0 0 $blue;
+  }
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+}
+
+.timeline-event-icon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+  background-color: $dark;
+  outline: 10px solid $white;
+  margin: 0.5em -0.5em;
+  position: absolute;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: $white;
+  background-color: $dark;
+  box-shadow: inset 0 0 0 0em $blue;
+  display: inline-block;
+  padding: 0.2em 1em;
+}
+
+
+
+// PROJETS \\
 
 #project{
   .portfolio-item{
@@ -264,9 +321,8 @@ section {
               transition:all .5s ease;
               opacity:0;
               background: $blue;
-              &:hover {
+              &:hover, &:focus, &:active {
                 opacity:0.9;
-
               }
           }
       }
@@ -354,8 +410,10 @@ section {
   }
 }
 
-#project *{
-  z-index:2;
+.close {
+  &:hover{
+    color: $blue;
+  }
 }
 
 
@@ -411,145 +469,97 @@ section {
   }
 }
 
-.portfolio-modal .close-modal{
-  position:absolute;
-  top:25px;
-  right:25px;
-  width:75px;
-  height:75px;
-  cursor:pointer;
-  background-color:transparent
-}
-
-.portfolio-modal .close-modal:hover{
-  opacity:.3
+.project-body {
+  padding: 70px 0px 40px;
 }
 
 
 
+// CONTACT \\
 
-
-/* Timeline */
-.timeline {
-  margin: 3em auto;
-  position: relative;
-  max-width: 46em;
+#contact{
+  background-color: $black;
+  color: $white;
 }
 
-.timeline:before {
+.contact-body {
+  padding: 50px 0px 10px;
+}
+
+.form-control{
+  padding: 1.5rem;
   background-color: $dark;
-  content: '';
-  margin-left: -1px;
-  position: absolute;
-  left: 2em;
-  width: 2px;
-  height: 98%;
-}
-
-.timeline-event:hover {
-  .timeline-event-icon {
-    transform: rotate(-45deg);
+  border: none;
+  &:focus{
     background-color: $blue;
+    color: black;
+    box-shadow: none;
   }
 }
 
-.timeline-event:hover {
-  .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 $blue;
-  }
+
+
+// FOOTER \\
+
+footer {
+  padding: 60px 0px 30px;
 }
 
-.timeline-event-copy {
-  padding: 2em;
-  position: relative;
-  top: -1.875em;
-  left: 4em;
-}
-
-
-.timeline-event-icon {
-  transition: transform 0.2s ease-in;
-  transform: rotate(45deg);
-  background-color: $dark;
-  outline: 10px solid $white;
-  margin: 0.5em -0.5em;
+.end-top a{
   position: absolute;
-  left: 2em;
-  width: 1em;
-  height: 1em;
+  margin-top: -90px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+  transition: all 0.5s ease;
+  background-color: $grey;
+  color: $dark;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  font-size: 3rem;
+  line-height: 55px;
+
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
-.timeline-event-thumbnail {
-  transition: box-shadow 0.5s ease-in 0.1s;
-  color: $white;
-  background-color: $dark;
-  box-shadow: inset 0 0 0 0em $blue;
-  display: inline-block;
-  padding: 0.2em 1em;
-}
-
-
-
-
-
-.socialI a {
-  transition:all 0.3s ease;
+.social-buttons li a {
+  transition: all 0.5s ease;
   background-color: $black;
   color: $white;
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
-  font-size:20px;
-  line-height:50px;
+  font-size: 25px;
+  line-height: 50px;
+  margin: 30px 0 0;
   
   &:hover {
     color: $white;
     text-decoration: none;
   }
-  
-  //font-size:20px;
 }
 
-ul.social-buttons li a:active,
-
-ul.social-buttons li a:focus,
-
-ul.social-buttons li a:hover{
-  //background-color:#fed136
-}
-
-
-/*
-.socialI {
-  transition:all 0.3s ease;
-  background-color: $black;
-  color: $white;
-  width:30px;
-  height:30px;
-  border-radius: 100%;
-  font-size:20px;
-  line-height:40px;
-  &:hover {
-    color: $white;
-    background-color: $blue; //rgb(73, 104, 173);
-    text-decoration: none;
-  }
-}
-*/
 .fa-facebook-f {
-  &:hover, &:active, &:focus{
+  &:hover, &:active {
     background-color: rgb(73, 104, 173);
   }
 }
 
 .fa-twitter {
-  &:hover, &:active, &:focus{
+  &:hover, &:active {
     background-color: rgb(64, 161, 235);
   }
 }
 
 .fa-linkedin-in {
-  &:hover, &:active, &:focus{
+  &:hover, &:active {
     background-color: rgb(48, 119, 176);
   }
 }

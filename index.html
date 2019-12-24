@@ -2,8 +2,12 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Simon Vennat, développeur">
+    <meta name="author" content="Simon Vennat">
     <title>Simon Vennat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ressources/photo.png">
     <link rel="steelsheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -180,9 +184,13 @@
           </div>
         </div>
         
-        <div class="row">
+        <div class="row project-body">
           <!-- WEB -->
           <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
+            <div class="portfolio-caption">
+              <h4>Site web</h4>
+              <p class="text-muted">HTML / CSS / JS</p>
+            </div>
             <a class="portfolio-link" data-toggle="modal" href="#modal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -191,13 +199,13 @@
               </div>
               <img class="img-fluid" src="ressources/htmlcss.png">
             </a>
-            <div class="portfolio-caption">
-              <h4>Site web</h4>
-              <p class="text-muted">HTML / CSS / JS</p>
-            </div>
           </div>
           <!-- BOMBERMAN -->
           <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
+            <div class="portfolio-caption">
+              <h4>Bomberman</h5>
+              <p class="text-muted">Java</p>
+            </div>
             <a class="portfolio-link" data-toggle="modal" href="#modal2">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -206,10 +214,7 @@
               </div>
               <img class="img-fluid" src="ressources/bbm1.png">
             </a>
-            <div class="portfolio-caption">
-              <h4>Bomberman</h5>
-              <p class="text-muted">Java</p>
-            </div>
+            
           </div>
           <!-- Marathon web -->
           <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
@@ -346,66 +351,68 @@
 
 
     <section id="contact">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="h1-responsive font-weight-bold text-center text-uppercase my-4">Me contacter</h2>
-          <div class="row">
-            <div class="col-lg-12">
-              <form id="contact" method="POST">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" id="name" name="name" class="form-control" placeholder="Nom">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" id="email" name="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Objet">
-                    </div>
-                    <div class="form-group">
-                      <textarea type="text" id="message" name="message" rows="6" class="form-control md-textarea" placeholder="Description"></textarea>
-                    </div>
-                    <a class="btn btn-lg" role="button" href=""> Envoyer </a>
+      <div class="container text-center">
+        <h2 class="h1-responsive font-weight-bold text-center text-uppercase my-4">Me contacter</h2>
+        <div class="row contact-body">
+          <div class="col-lg-12">
+            <form id="contact" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Nom">
                   </div>
+                  <div class="form-group">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Objet">
+                  </div>
+                  <div class="form-group">
+                    <textarea type="text" id="message" name="message" rows="6" class="form-control md-textarea" placeholder="Description"></textarea>
+                  </div>
+                  <a class="btn btn-lg" role="button" href=""> Envoyer </a>
+                </div>
 
-                  <div class="col-md-6">
-                    <h3>Quelques informations...</h3>
-                    <ul class="list-unstyled text-muted mb-0">
-                      <li>
-                        <p>Nord de la France</p>
-                      </li>
-                      <li>
-                        <p>+33 6 51 64 07 89</p>
-                      </li>
-                      <li>
-                        <p>simonvennatpro@gmail.com</p>
-                      </li>
-                    </ul>
-                  </div>
-              </form>
-            </div>
+                <div class="col-md-6">
+                  <h3>Quelques informations...</h3>
+                  <ul class="list-unstyled text-muted mb-0">
+                    <li>
+                      <p>Nord de la France</p>
+                    </li>
+                    <li>
+                      <p>+33 6 51 64 07 89</p>
+                    </li>
+                    <li>
+                      <p>simonvennatpro@gmail.com</p>
+                    </li>
+                  </ul>
+                </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
 
-    <footer class="py-4 bg-dark text-white-50">
+    <footer class="bg-dark text-white-50">
+      <div class="end-top">
+        <a class="fas fa-chevron-up text-center js-scroll-trigger" href="#top-page"></a>
+      </div>
+
       <div class="container text-center">
         <ul class="list-unstyled social-buttons">
           <li>
             <small>Copyright &copy; Simon Vennat</small>
           </li>
           <li>
-            <ul class="list-inline" style="display: block;">
-              <li class="list-inline-item socialI">                
+            <ul class="list-inline socialI">
+              <li class="list-inline-item">                
                 <a class="fab fa-facebook-f" href="https://www.facebook.com/simon.vennat" target="_blank"></a>
               </li>
-              <li class="list-inline-item socialI">
+              <li class="list-inline-item">
                 <a class="fab fa-twitter" href="https://twitter.com/simonvennat" target="_blank"></a>
               </li>
-              <li class="list-inline-item socialI">
+              <li class="list-inline-item">
                 <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/simon-vennat" target="_blank"></a>
               </li>
             </ul>
@@ -416,7 +423,7 @@
   
 
     <div id="scrollUp">
-      <a class="fas fa-chevron-up" href="#top-page"></a>
+      <a class="fas fa-chevron-up current-top js-scroll-trigger" href="#top-page"></a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

@@ -10,16 +10,12 @@ window.addEventListener('load',function(){
 
   $(function () {
     $(window).scroll(function () {  //Fonction pour déscendre la page
-        if ($(this).scrollTop() > 200) {  // A 200pixels du haut de page
-            $('#scrollUp').css('right', '30px');  // Replace l'image à 30pixels à droite
-        } else {
-            $('#scrollUp').removeAttr('style'); // Supprime les attributs CSS affectés par javascript
-        }
+      if ($(this).scrollTop() > 200) {  // A 200pixels du haut de page
+          $('#scrollUp').css('right', '50px');  // Replace l'image à 30pixels à droite
+      } else {
+          $('#scrollUp').removeAttr('style'); // Supprime les attributs CSS affectés par javascript
+      }
     });
-  });
-
-  $("#scrollUp").click(function () {
-    $("html, body").animate({scrollTop: 0}, "slow");
   });
 
 
