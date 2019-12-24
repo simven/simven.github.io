@@ -38,6 +38,18 @@ h1 {
   font-family: "Helvetica";
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
 header, body, html {
   width: 100%;
   height: 100%;
@@ -52,7 +64,7 @@ header, body, html {
 }
 
 section {
-  padding: 6rem;
+  padding: 100px 0;
 }
 
 @media (min-width: 768px) {
@@ -203,6 +215,7 @@ section {
   margin: 3em auto;
   position: relative;
   max-width: 46em;
+  font-size: 1em;
 }
 
 .timeline:before {
@@ -231,6 +244,7 @@ section {
   position: relative;
   top: -1.875em;
   left: 4em;
+  width: 80%;
 }
 
 .timeline-event-icon {
@@ -262,6 +276,81 @@ section {
   padding: 0.2em 1em;
 }
 
+.timeline-event-copy h3 {
+  font-size: 1.75em;
+}
+
+.timeline-event-copy h4 {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.timeline-event-copy strong {
+  font-weight: 700;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 1.2em;
+}
+
+/*
+@media (min-width:768px){
+  .timeline:before{
+    left:50%
+  }
+  .timeline>li{
+    min-height:100px;margin-bottom:100px
+  }
+  .timeline>li .timeline-panel{
+    float:left;width:41%;padding:0 20px 20px 30px;text-align:right
+  }
+  .timeline>li .timeline-image{
+    left:50%;width:100px;height:100px;margin-left:-50px
+  }
+  .timeline>li .timeline-image h4{
+    font-size:13px;line-height:18px;margin-top:16px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel{
+    float:right;padding:0 30px 20px 20px;text-align:left
+  }
+}
+
+@media (min-width:992px){
+  .timeline>li{
+    min-height:150px
+  }
+  .timeline>li .timeline-panel{
+    padding:0 20px 20px
+  }
+  .timeline>li .timeline-image{
+    width:150px;height:150px;margin-left:-75px
+  }
+  .timeline>li .timeline-image h4{
+    font-size:18px;line-height:26px;margin-top:30px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel{
+    padding:0 20px 20px
+  }
+}
+
+@media (min-width:1200px){
+  .timeline>li{
+    min-height:170px
+  }
+  .timeline>li .timeline-panel{
+    padding:0 20px 20px 100px
+  }
+  .timeline>li .timeline-image{
+    width:170px;height:170px;margin-left:-85px
+  }
+  .timeline>li .timeline-image h4{
+    margin-top:40px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel{
+    padding:0 100px 20px 20px
+  }
+}
+*/
 #project .portfolio-item {
   right: 0;
   margin: 0 0 15px;
