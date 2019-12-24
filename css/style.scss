@@ -2,7 +2,6 @@
 @import "../bootstrap/scss/_variables.scss";
 @import "../bootstrap/scss/mixins/_breakpoints.scss";
 
-
 /*
 1. FONTS
 2. VARIABLES
@@ -417,10 +416,10 @@ section {
 }
 
 
-@media (min-width:767px){
+@include media-breakpoint-up(md){
   #project{
       .portfolio-item{
-          margin:0 0 30px
+          // margin:0 0 30px;
       }
   }
 } 

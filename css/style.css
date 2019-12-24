@@ -324,12 +324,6 @@ section {
   color: #64C6C8;
 }
 
-@media (min-width: 767px) {
-  #project .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
 .portfolio-modal {
   padding-right: 0 !important;
 }
