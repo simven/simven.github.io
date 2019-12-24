@@ -26,14 +26,15 @@
 $d: 900ms;
 $blue: #64C6C8;
 $white: #FFFFFF;
-//$dark: #333333;
-$dark: rgb(53,58,63);
+$dark: #353A3F;
+$black: rgb(34, 37, 41);
 
+/*
 body, html, header, h1{
   margin: 0px;
   padding: 0px;
 }
-
+*/
 body{
   font-family: "San Francisco";
 }
@@ -76,7 +77,7 @@ header, body, html {
 
 .fa-chevron-up{
   color: $dark;
-  &:hover{
+  &:hover, &:focus{
     color: $blue;
     text-decoration: none;
   }
@@ -116,7 +117,7 @@ header, body, html {
         color: $white;
         font-family: "Montserrat", sans-serif;
         padding: 0.75rem 0;
-        &:hover, &.active{
+        &:hover, &:focus, &.active{
           color: $blue;
         }
       }
@@ -137,7 +138,7 @@ header, body, html {
         .nav-link {
           color: $white;
           padding: 0 1rem;
-          &:hover {
+          &:hover, &:focus {
             color: $blue;
           }
         }
@@ -162,7 +163,7 @@ header, body, html {
         .nav-item {
           .nav-link {
             color: $white;
-            &:hover {
+            &:hover, &:focus {
               color: $blue;
             }
           }
@@ -177,7 +178,7 @@ header, body, html {
   background-color: $blue;
   color: $white;
   box-shadow: none;
-  &:hover{
+  &:hover, &:focus{
     background-color: $blue;
     color: $dark;
     box-shadow: none;
@@ -191,17 +192,14 @@ header, body, html {
 
 .fa-angle-double-down{
   color:#CCCCCC;
-  &:hover{
+  font-size: 4rem;
+  &:hover, &:focus{
     color: $blue;
     text-decoration: none;
   }
 }
 
-.fa-angle-double-down {
-  font-size: 4rem;
-}
-
-.fa-circle {
+.rond {
   color: $blue;
 }
 
@@ -215,7 +213,7 @@ section {
 }
 
 #contact{
-  background-color: rgb(34, 37, 41);
+  background-color: $black;
   color: white;
 }
 
@@ -240,7 +238,8 @@ section {
 
 #project{
   .portfolio-item{
-      right:0;margin:0 0 15px;
+      right:0;
+      margin:0 0 15px;
   }
 }
 
@@ -265,20 +264,15 @@ section {
               transition:all .5s ease;
               opacity:0;
               background: $blue;
+              &:hover {
+                opacity:0.9;
+
+              }
           }
       }
   }
 }   
 
-#project{
-  .portfolio-item{
-      .portfolio-link {
-          .portfolio-hover:hover{
-              opacity:0.9;
-          }
-      }
-  }
-}  
 
 #project{
   .portfolio-item{
@@ -477,7 +471,7 @@ section {
   transition: transform 0.2s ease-in;
   transform: rotate(45deg);
   background-color: $dark;
-  outline: 10px solid white;
+  outline: 10px solid $white;
   margin: 0.5em -0.5em;
   position: absolute;
   left: 2em;
@@ -492,4 +486,70 @@ section {
   box-shadow: inset 0 0 0 0em $blue;
   display: inline-block;
   padding: 0.2em 1em;
+}
+
+
+
+
+
+.socialI a {
+  transition:all 0.3s ease;
+  background-color: $black;
+  color: $white;
+  width:50px;
+  height:50px;
+  border-radius: 100%;
+  font-size:20px;
+  line-height:50px;
+  
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+  
+  //font-size:20px;
+}
+
+ul.social-buttons li a:active,
+
+ul.social-buttons li a:focus,
+
+ul.social-buttons li a:hover{
+  //background-color:#fed136
+}
+
+
+/*
+.socialI {
+  transition:all 0.3s ease;
+  background-color: $black;
+  color: $white;
+  width:30px;
+  height:30px;
+  border-radius: 100%;
+  font-size:20px;
+  line-height:40px;
+  &:hover {
+    color: $white;
+    background-color: $blue; //rgb(73, 104, 173);
+    text-decoration: none;
+  }
+}
+*/
+.fa-facebook-f {
+  &:hover, &:active, &:focus{
+    background-color: rgb(73, 104, 173);
+  }
+}
+
+.fa-twitter {
+  &:hover, &:active, &:focus{
+    background-color: rgb(64, 161, 235);
+  }
+}
+
+.fa-linkedin-in {
+  &:hover, &:active, &:focus{
+    background-color: rgb(48, 119, 176);
+  }
 }
