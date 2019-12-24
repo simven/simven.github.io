@@ -24,24 +24,17 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-/*
-@font-face {
-  font-family: "San Francisco bold";
-  color: $white;
-  src: url("../ressources/sf-pro-text_semibold.woff2");
-}
-*/
-
 @font-face {
   font-family: "Helvetica";
   color: $white;
-  src: url("../ressources/Helvetica.ttf");
+  src: url("../font/Helvetica.ttf");
 }
 
 
 // VARIABLES \\
 
 $d: 900ms;
+$blueT: rgba(100, 198, 200, 0.836);
 $blue: #64C6C8;
 $white: #FFFFFF;
 $dark: #353A3F;
@@ -51,12 +44,22 @@ $black: #222529;
 
 
 // GLOBAL \\
+
 body{
   font-family: "San Francisco";
 }
 
-h1{
-  font-family: "Helvetica";  
+h1, h2, h3 {
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Muli", sans-serif;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
 }
 
 @include media-breakpoint-up(md){
@@ -67,7 +70,7 @@ h1{
     font-size: 1.75rem;
   }
   h4{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -81,9 +84,9 @@ header, body, html {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
   @include media-breakpoint-up(md){
-    padding:150px 0;
+    padding: 150px 0;
   }
 }
 
@@ -134,13 +137,15 @@ section {
 // ===================== Style des boutons =====================
 .btn{
   font-family: "Montserrat", sans-serif;
-  background-color: $blue;
+  background-color: $blueT;
   color: $white;
   box-shadow: none;
+  //opacity: 0.8;
   &:hover, &:active {
     background-color: $blue;
     color: $dark;
     box-shadow: none;
+    //opacity: 1;
   }
   &:before{
     background-color: $blue;
@@ -157,6 +162,7 @@ section {
 #mainNav {
   box-shadow: $box-shadow;
   background-color: $dark;
+  transition: background-color 0.3s ease;
   .navbar-brand {
     color: $blue;
     font-family: 'Shadows Into Light', cursive;
@@ -165,10 +171,13 @@ section {
     .nav-item {
       .nav-link {
         color: $white;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Muli", sans-serif;
         padding: 0.75rem 0;
-        &:hover, &:focus, &.active{
+        &:hover, &:active{
           color: $blue;
+        }
+        &.active {
+          color: $blue !important;
         }
       }
     }
@@ -176,6 +185,7 @@ section {
 
   @include media-breakpoint-up(lg) {
     box-shadow: none;
+    background-color: transparent;
     .navbar-brand {
       color: $blue;
       font-family: 'Shadows Into Light', cursive;
@@ -184,7 +194,6 @@ section {
     .navbar-nav {
       .nav-item {
         .nav-link {
-          color: $white;
           padding: 0 1rem;
           &:hover, &:focus {
             color: $blue;
@@ -193,6 +202,20 @@ section {
         &:last-child {
           .nav-link {
             padding-right: 0;
+          }
+        }
+      }
+    }
+    &.navbar-scrolled {
+      box-shadow: $box-shadow;
+      background-color: $dark;
+      .navbar-brand {
+        color: $blue;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link:hover {
+            color: $blue;
           }
         }
       }
@@ -217,7 +240,7 @@ section {
 
   @include media-breakpoint-up(md){
     h1{
-      font-size: 3rem;
+      font-size: 5rem;
     }
   }
 }
@@ -243,6 +266,9 @@ section {
   color: $blue;
 }
 
+.comp {
+  padding: 40px 0 0;
+}
 
 
 // FORMATION - Timeline \\
@@ -251,7 +277,6 @@ section {
   margin: 3em auto;
   position: relative;
   max-width: 46em;
-  font-size: 1em;
 }
 
 .timeline {
@@ -311,78 +336,15 @@ section {
   display: inline-block;
   padding: 0.2em 1em;
 }
-.timeline-event-copy h3 {
-  font-size: 1.75em;
-}
-.timeline-event-copy h4 {
-  font-size: 1.2em;
-  margin-bottom: 1.2em;
-}
-.timeline-event-copy strong {
-  font-weight: 700;
-}
-.timeline-event-copy p:not(.timeline-event-thumbnail) {
-  padding-bottom: 1.2em;
-}
 
-/*
-@media (min-width:768px){
-  .timeline:before{
-    left:50%
-  }
-  .timeline>li{
-    min-height:100px;margin-bottom:100px
-  }
-  .timeline>li .timeline-panel{
-    float:left;width:41%;padding:0 20px 20px 30px;text-align:right
-  }
-  .timeline>li .timeline-image{
-    left:50%;width:100px;height:100px;margin-left:-50px
-  }
-  .timeline>li .timeline-image h4{
-    font-size:13px;line-height:18px;margin-top:16px
-  }
-  .timeline>li.timeline-inverted>.timeline-panel{
-    float:right;padding:0 30px 20px 20px;text-align:left
+.timeline-event-copy {
+  h4 {
+    margin-bottom: 1.2em;
   }
 }
 
-@media (min-width:992px){
-  .timeline>li{
-    min-height:150px
-  }
-  .timeline>li .timeline-panel{
-    padding:0 20px 20px
-  }
-  .timeline>li .timeline-image{
-    width:150px;height:150px;margin-left:-75px
-  }
-  .timeline>li .timeline-image h4{
-    font-size:18px;line-height:26px;margin-top:30px
-  }
-  .timeline>li.timeline-inverted>.timeline-panel{
-    padding:0 20px 20px
-  }
-}
 
-@media (min-width:1200px){
-  .timeline>li{
-    min-height:170px
-  }
-  .timeline>li .timeline-panel{
-    padding:0 20px 20px 100px
-  }
-  .timeline>li .timeline-image{
-    width:170px;height:170px;margin-left:-85px
-  }
-  .timeline>li .timeline-image h4{
-    margin-top:40px
-  }
-  .timeline>li.timeline-inverted>.timeline-panel{
-    padding:0 100px 20px 20px
-  }
-}
-*/
+
 // PROJETS \\
 
 #project{
@@ -427,7 +389,7 @@ section {
       .portfolio-link {
           .portfolio-hover{
               .portfolio-hover-content{
-                  font-size:20px;
+                  //font-size:20px;
                   position:absolute;
                   top:50%;
                   width:100%;
@@ -512,7 +474,7 @@ section {
 @include media-breakpoint-up(md){
   #project{
       .portfolio-item{
-          // margin:0 0 30px;
+         margin:0 0 30px;
       }
   }
 } 
@@ -526,7 +488,7 @@ section {
 // largeur popup
 .portfolio-modal .modal-dialog{
   margin: 3rem, auto;
-  max-width:60vw;
+  min-width:60vw;
 }
 
 .portfolio-modal{
