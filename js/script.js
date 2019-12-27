@@ -68,3 +68,8 @@ window.addEventListener('load',function(){
   })
 
 })(jQuery); // End of use strict
+
+
+
+
+

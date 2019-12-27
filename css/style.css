@@ -75,6 +75,17 @@ section {
   }
 }
 
+.content {
+  background-color: white;
+  position: relative;
+}
+
+.split {
+  margin-top: 100vh;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+}
+
 #scrollUp {
   position: fixed;
   right: -100px;
@@ -82,8 +93,8 @@ section {
 }
 
 .current-top {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #353A3F;
   font-size: 2rem;
   opacity: 0.6;
@@ -103,7 +114,7 @@ section {
   bottom: 100%;
   left: 0;
   background-color: #353A3F;
-  z-index: 3;
+  z-index: 1040;
   -webkit-transition: opacity 900ms ease-out, visibility 0ms linear 900ms, bottom 900ms ease-out;
   transition: opacity 900ms ease-out, visibility 0ms linear 900ms, bottom 900ms ease-out;
 }
@@ -200,6 +211,10 @@ section {
 }
 
 .head {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9)), to(rgba(51, 51, 51, 0.9))), url("../ressources/bg.jpg");
   background: linear-gradient(to bottom, rgba(51, 51, 51, 0.9) 0%, rgba(51, 51, 51, 0.9) 100%), url("../ressources/bg.jpg");
   background-size: cover;
@@ -224,6 +239,10 @@ section {
 .fa-angle-double-down:hover {
   color: #64C6C8;
   text-decoration: none;
+}
+
+.content-about {
+  text-align: justify;
 }
 
 .rond {
