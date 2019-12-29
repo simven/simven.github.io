@@ -182,7 +182,9 @@ section {
   #mainNav .navbar-brand {
     color: #64C6C8;
     font-family: 'Shadows Into Light', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 0 1rem;
@@ -200,6 +202,7 @@ section {
   }
   #mainNav.navbar-scrolled .navbar-brand {
     color: #64C6C8;
+    font-size: 2rem;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #64C6C8;
@@ -215,8 +218,8 @@ section {
   height: 100%;
   top: 0;
   position: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9)), to(rgba(51, 51, 51, 0.9))), url("../ressources/bg.jpg");
-  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.9) 0%, rgba(51, 51, 51, 0.9) 100%), url("../ressources/bg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.7)), to(rgba(51, 51, 51, 0.7))), url("../ressources/bg.jpg");
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.7) 0%, rgba(51, 51, 51, 0.7) 100%), url("../ressources/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
