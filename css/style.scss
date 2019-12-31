@@ -8,11 +8,10 @@
 3. GLOBAL
 4. NAVBAR
 5. HEADER
-6. À PROPOS
-7. COMPÉTENCES
-8. FORMATION
-9. PROJETS
-10. CONTACT
+6. COMPÉTENCES
+7. FORMATION
+8. PROJETS
+9. CONTACT
 */
 
 
@@ -275,14 +274,6 @@ section {
 
 
 
-// À PROPOS \\
-
-.content-about {
-  text-align: justify;
-}
-
-
-
 // COMPÉTENCES \\
 
 .rond {
@@ -503,10 +494,12 @@ section {
   }
 } 
 
-
-
 .portfolio-modal{
   padding-right:0!important
+}
+
+.wachr {
+  width: 10rem;
 }
 
 // largeur popup
