@@ -251,6 +251,20 @@ section {
   padding: 40px 0 0;
 }
 
+#flag {
+  width: 10rem;
+}
+
+.lang {
+  padding: 50px 0 0;
+}
+
+@media (min-width: 768px) {
+  .lang {
+    padding: 75px 0 0;
+  }
+}
+
 .timeline {
   margin: 3em auto;
   position: relative;
