@@ -59,7 +59,6 @@ h4 {
 
 p {
   font-family: 'Roboto Mono', monospace;
-
 }
 
 @include media-breakpoint-up(md){
@@ -150,12 +149,10 @@ section {
   background-color: $blueT;
   color: $white;
   box-shadow: none;
-  //opacity: 0.8;
   &:hover, &:active {
     background-color: $blue;
     color: $dark;
     box-shadow: none;
-    //opacity: 1;
   }
   &:before{
     background-color: $blue;
@@ -652,6 +649,3 @@ footer {
     background-color: rgb(48, 119, 176);
   }
 }
-
-
-
