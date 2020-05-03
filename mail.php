@@ -5,23 +5,18 @@ if(isset($_POST['send'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    if(empty($name) || empty($email) || empty($subject) || empty($message))
-    {
+    if(empty($name) || empty($email) || empty($subject) || empty($message)) {
         header('location:index.php?error');
     }
-    else
-    {
+    else {
         $to = "daytecontact@gmail.com";
 
-        if(mail($to,$subject,$message,$email))
-        {
+        if(mail($to,$subject,$message,$email)) {
             header("location:index.php?success");
         }
     }
 }
-else
-{
+else {
     header("location:index.php");
 }
-
 ?>
