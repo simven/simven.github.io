@@ -415,21 +415,6 @@
         <section id="contact">
           <div class="container text-center">
             <h2 class="text-uppercase section-heading">Me contacter</h2>
-            <?php 
-              $Msg = "";
-              if(isset($_GET['error']))
-              {
-                $Msg = " Please Fill in the Blanks ";
-                echo '&lt;div class="alert alert-danger">'.$Msg.'&lt;/div>';
-              }
-
-              if(isset($_GET['success']))
-              {
-                $Msg = " Your Message Has Been Sent ";
-                echo '&lt;div class="alert alert-success">'.$Msg.'&lt;/div>';
-              }
-            
-            ?>
             <div class="row contact-body">
               <div class="col-lg-12">
                 <form action="mail.php" method="POST">
