@@ -106,7 +106,7 @@ section {
   right: -100px;
   bottom: 50px;
 
-  a {
+  & > a {
     transition: all 0.3s ease;
     color: $dark;
     font-size: 2rem;

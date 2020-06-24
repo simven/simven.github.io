@@ -91,7 +91,7 @@ section {
   bottom: 50px;
 }
 
-#scrollUp a {
+#scrollUp > a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #353A3F;
@@ -99,21 +99,21 @@ section {
   opacity: 0.6;
 }
 
-#scrollUp a:active {
+#scrollUp > a:active {
   color: #64C6C8 !important;
   opacity: 1;
 }
 
-#scrollUp a:hover {
+#scrollUp > a:hover {
   text-decoration: none;
 }
 
 @media (min-width: 992px) {
-  #scrollUp a {
+  #scrollUp > a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  #scrollUp a:hover {
+  #scrollUp > a:hover {
     color: #64C6C8;
     opacity: 1;
   }
