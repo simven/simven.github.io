@@ -118,7 +118,6 @@ section {
     }
 
     &:hover {
-      color: $dark;
       text-decoration: none;
     }
 
@@ -129,6 +128,25 @@ section {
         opacity: 1;
       }
     }
+  }
+}
+
+.end-top a {
+  position: absolute;
+
+  &:active {
+    color: $blue;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-up(lg){
+    transition: all 0.4s ease;
+    &:hover {
+      color: $blue;
+    } 
   }
 }
 // ===========================================================

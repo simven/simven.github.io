@@ -105,7 +105,6 @@ section {
 }
 
 #scrollUp a:hover {
-  color: #353A3F;
   text-decoration: none;
 }
 
@@ -117,6 +116,28 @@ section {
   #scrollUp a:hover {
     color: #64C6C8;
     opacity: 1;
+  }
+}
+
+.end-top a {
+  position: absolute;
+}
+
+.end-top a:active {
+  color: #64C6C8;
+}
+
+.end-top a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .end-top a {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .end-top a:hover {
+    color: #64C6C8;
   }
 }
 
