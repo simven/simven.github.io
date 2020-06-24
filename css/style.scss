@@ -113,7 +113,7 @@ section {
     opacity: 0.6;
     
     &:active {
-      color: $blue;
+      color: $blue !important;
       opacity: 1;
     }
 

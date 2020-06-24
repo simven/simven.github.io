@@ -100,7 +100,7 @@ section {
 }
 
 #scrollUp a:active {
-  color: #64C6C8;
+  color: #64C6C8 !important;
   opacity: 1;
 }
 
