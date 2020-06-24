@@ -91,12 +91,7 @@ section {
   bottom: 50px;
 }
 
-#scrollUp a:active {
-  color: #64C6C8;
-  opacity: 1;
-}
-
-.current-top {
+#scrollUp a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #353A3F;
@@ -104,17 +99,22 @@ section {
   opacity: 0.6;
 }
 
-.current-top:hover {
+#scrollUp a:active {
+  color: #64C6C8;
+  opacity: 1;
+}
+
+#scrollUp a:hover {
   color: #353A3F;
   text-decoration: none;
 }
 
 @media (min-width: 992px) {
-  .current-top {
+  #scrollUp a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .current-top:hover {
+  #scrollUp a:hover {
     color: #64C6C8;
     opacity: 1;
   }

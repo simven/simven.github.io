@@ -106,28 +106,28 @@ section {
   right: -100px;
   bottom: 50px;
 
-  a:active {
-    color: $blue;
-    opacity: 1;
-  }
-}
-
-.current-top{
-  transition: all 0.3s ease;
-  color: $dark;
-  font-size: 2rem;
-  opacity: 0.6;
-
-  &:hover {
-    color: $dark;
-    text-decoration: none;
-  }
-  
-  @include media-breakpoint-up(lg) {
+  a {
     transition: all 0.3s ease;
-    &:hover {
+    color: $dark;
+    font-size: 2rem;
+    opacity: 0.6;
+    
+    &:active {
       color: $blue;
       opacity: 1;
+    }
+
+    &:hover {
+      color: $dark;
+      text-decoration: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      transition: all 0.3s ease;
+      &:hover {
+        color: $blue;
+        opacity: 1;
+      }
     }
   }
 }
