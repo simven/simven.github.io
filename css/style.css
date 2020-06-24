@@ -247,15 +247,26 @@ section {
 }
 
 .fa-angle-double-down {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   color: #CCCCCC;
   font-size: 4rem;
 }
 
-.fa-angle-double-down:hover {
+.fa-angle-double-down:active {
   color: #64C6C8;
+}
+
+.fa-angle-double-down:hover {
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .fa-angle-double-down {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .fa-angle-double-down:hover {
+    color: #64C6C8;
+  }
 }
 
 .rond {

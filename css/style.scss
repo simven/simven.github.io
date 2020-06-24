@@ -270,12 +270,22 @@ section {
 }
 
 .fa-angle-double-down{
-  transition: all 0.5s ease;
   color: $grey;
   font-size: 4rem;
-  &:hover {
+
+  &:active {
     color: $blue;
+  }
+
+  &:hover {
     text-decoration: none;
+  }
+
+  @include media-breakpoint-up(lg){
+    transition: all 0.4s ease;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
