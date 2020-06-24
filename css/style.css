@@ -246,25 +246,25 @@ section {
   }
 }
 
-.fa-angle-double-down {
+.scrollDown a {
   color: #CCCCCC;
   font-size: 4rem;
 }
 
-.fa-angle-double-down:active {
+.scrollDown a:active {
   color: #64C6C8;
 }
 
-.fa-angle-double-down:hover {
+.scrollDown a:hover {
   text-decoration: none;
 }
 
 @media (min-width: 992px) {
-  .fa-angle-double-down {
+  .scrollDown a {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
-  .fa-angle-double-down:hover {
+  .scrollDown a:hover {
     color: #64C6C8;
   }
 }

@@ -269,7 +269,8 @@ section {
   }
 }
 
-.fa-angle-double-down{
+
+.scrollDown a {
   color: $grey;
   font-size: 4rem;
 
@@ -285,7 +286,7 @@ section {
     transition: all 0.4s ease;
     &:hover {
       color: $blue;
-    }
+    } 
   }
 }
 
