@@ -105,6 +105,10 @@ section {
   position: fixed;
   right: -100px;
   bottom: 50px;
+  a:active {
+    color: $blue;
+    opacity: 1;
+  }
 }
 
 .current-top{
@@ -113,9 +117,15 @@ section {
   font-size: 2rem;
   opacity: 0.6;
   &:hover {
-    color: $blue;
+    color: $dark;
     text-decoration: none;
-    opacity: 1;
+  }
+  @include media-breakpoint-up(lg) {
+    transition: all 0.3s ease;
+    &:hover {
+      color: $blue;
+      opacity: 1;
+    }
   }
 }
 // ===========================================================
@@ -587,7 +597,7 @@ footer {
   padding: 60px 0px 30px;
 }
 
-.end-top a{
+.end-top a {
   position: absolute;
   margin-top: -90px;
   margin-left: auto;
@@ -595,7 +605,6 @@ footer {
   left: 0;
   right: 0;
 
-  transition: all 0.5s ease;
   background-color: $grey;
   color: $dark;
   width: 60px;
@@ -605,9 +614,19 @@ footer {
   line-height: 55px;
 
 
-  &:hover {
+  &:active {
     color: $blue;
+  }
+
+  &:hover {
     text-decoration: none;
+  }
+
+  @include media-breakpoint-up(lg){
+    transition: all 0.4s ease;
+    &:hover {
+      color: $blue;
+    } 
   }
 }
 

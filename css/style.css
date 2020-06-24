@@ -91,6 +91,11 @@ section {
   bottom: 50px;
 }
 
+#scrollUp a:active {
+  color: #64C6C8;
+  opacity: 1;
+}
+
 .current-top {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -100,9 +105,19 @@ section {
 }
 
 .current-top:hover {
-  color: #64C6C8;
+  color: #353A3F;
   text-decoration: none;
-  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .current-top {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .current-top:hover {
+    color: #64C6C8;
+    opacity: 1;
+  }
 }
 
 .loader {
@@ -486,8 +501,6 @@ footer {
   margin-right: auto;
   left: 0;
   right: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   background-color: #CCCCCC;
   color: #353A3F;
   width: 60px;
@@ -497,9 +510,22 @@ footer {
   line-height: 55px;
 }
 
-.end-top a:hover {
+.end-top a:active {
   color: #64C6C8;
+}
+
+.end-top a:hover {
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .end-top a {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .end-top a:hover {
+    color: #64C6C8;
+  }
 }
 
 .socialI li a {
