@@ -567,4 +567,8 @@ footer {
 .fa-linkedin-in:hover, .fa-linkedin-in:active {
   background-color: #3077b0;
 }
+
+.btn-project {
+  padding: 5px 0;
+}
 /*# sourceMappingURL=style.css.map */
