@@ -53,6 +53,10 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
 h4 {
   font-family: "Muli", sans-serif;
 }
@@ -384,7 +388,7 @@ section {
 }
 
 .timeline-event-copy {
-  h4 {
+  .t {
     margin-bottom: 1.2em;
   }
 }
@@ -408,6 +412,80 @@ section {
           max-width:400px;
           margin:0 auto;
           background-color: rgb(248, 248, 248);
+
+          .project-img{
+            height: 185px;
+            max-width: 210px;
+          }
+
+          .project-img-watcher {
+            height: 161px;
+          }
+
+          @include media-breakpoint-only(sm) {
+            .project-img-dayte {
+              height: 189px;
+            }
+
+            .content-header-pf {
+              height: 233px;
+            }
+            .project-img-portfolio {
+              margin: 10%;
+            }
+          }
+
+          @include media-breakpoint-only(md) {
+            .project-img-dayte {
+              height: 184px;
+            }
+
+            .project-img-con {
+              height: 208px;
+            }
+
+            .project-img-watcher {
+              height: 170px;
+            }
+            
+            .content-header-pf {
+              height: 218px;
+            }
+            .project-img-portfolio {
+              margin-top: 8%;
+            }
+
+            .project-img-bbm {
+              height: 218px;
+            }
+          }
+
+          @include media-breakpoint-only(lg) {
+            .project-img-dayte {
+              height: 209px;
+            }
+
+            .project-img-con {
+              height: 209px;
+            }
+          }
+
+          @include media-breakpoint-up(xl) {   
+            .project-img-dayte {
+              height: 161px;
+            }
+
+            .project-img-con {
+              height: 209px;
+            }
+
+            .content-header-pf {
+              height: 257px;
+            }
+            .project-img-portfolio {
+              margin-top: 14%;
+            }
+          }
       }
   }
 }  
@@ -582,6 +660,13 @@ section {
 
 .contact-body {
   padding: 50px 0px 10px;
+}
+
+@include media-breakpoint-down(sm) {
+  .fields {
+    margin: auto;
+    width: 90vw;
+  }
 }
 
 .form-control{

@@ -6,7 +6,7 @@
     <meta name="description" content="Portfolio de Simon Vennat, développeur web">
     <meta name="author" content="Simon Vennat">
     <title>Simon Vennat</title>
-    <link rel="shortcut icon" href="ressources/photo.png">
+    <link rel="shortcut icon" href="ressources/logo.png">
     <link rel="steelsheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" href="bootstrap/scss/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -88,7 +88,7 @@
                 </span>
                 <h3 class="section-heading">WEB</h3>
                 <p class="text-muted">PHP (Symfony / Laravel) / .NET</p>
-                <p class="text-muted">HTML / CSS / JS & TS (Angular)</p>
+                <p class="text-muted">HTML / CSS / JS & TS (Angular & React)</p>
               </div>
               
               <!-- JAVA -->
@@ -151,26 +151,23 @@
               </div>
 
               <div class="row text-center">
+                <!-- Français -->
+                <div class="col-md-6 comp">
+                  <img class="flag" src="ressources/french.png" alt="Français">
+                  <h3 class="section-heading">Français</h3>
+                  <p class="text-muted">Langue maternelle</p>
+                  <p class="text-muted">
+                    486 points au Certificat Voltaire </br> <a class="text-muted" href="https://www.certificat-voltaire.fr/orthographe-recruteur?code=TPWGK7" target="_blank">Code : TPWGK7</a>
+                  </p>
+                  <p></p>
+                </div>
+
+
                 <!-- Anglais -->
                 <div class="col-md-6 comp">
                   <img class="flag" src="ressources/uk.svg" alt="Anglais">
                   <h3 class="section-heading">Anglais</h3>
                   <p class="text-muted">Niveau B2</p>
-                </div>
-
-                <!-- Espagnol -->
-                <div class="col-md-6 comp">
-                  <img class="flag" src="ressources/spain.png" alt="Espagnol">
-                  <h3 class="section-heading">Espagnol</h3>
-                  <p class="text-muted">Niveau B1</p>
-                </div>
-
-                <!-- Français -->
-                <div class="col-md-12 comp">
-                  <img class="flag" src="ressources/french.png" alt="Français">
-                  <h3 class="section-heading">Français</h3>
-                  <p class="text-muted">486 points au Certificat Voltaire</p>
-                  <p><a class="text-muted" href="https://www.certificat-voltaire.fr/orthographe-recruteur?code=TPWGK7" target="_blank">Code : TPWGK7</a></p>
                 </div>
               </div>
             </div>
@@ -193,9 +190,12 @@
                     <label class="timeline-event-icon" ></label>
                     <div class="timeline-event-copy">
                       <p class="timeline-event-thumbnail">2020 - 2021</p>
-                      <h3>Licence Professionnelle DIOC </h3>
+                      <h3>Licence Professionnelle <span title="Développement Informatique et Outils Collaboratifs">DIOC</span> </h3>
                       <h3>En contrat de professionnalisation</h3>
-                      <h4>IUT de Lens</h4>
+                      <div class="t">
+                        <h4>IUT de Lens</h4>
+                        <h4>Chausport - SPODIS</h4>
+                      </div>
                       <p>En cours d'obtention.</p>
                     </div>
                   </li>
@@ -233,7 +233,7 @@
             </div>
             
             <div class="row project-body">
-              <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
+              <div class="col-sm-6 col-md-4 col-xl-3 portfolio-item align-self-end">
                 <a class="portfolio-link" data-toggle="modal" href="#modal1">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -241,16 +241,16 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <img src="ressources/iut-icon.png" alt="IUT" height="185">
+                    <img class="project-img project-img-weka" src="ressources/quiz.png" alt="Weka">
                   </div>
                 </a>
                 <div class="portfolio-caption">
-                  <h4>Site web</h4>
-                  <p class="text-muted">HTML / CSS / JS</p>
+                  <h4>Application de Quiz</h4>
+                  <p class="text-muted">HTML / CSS / TS / PostgreSQL <br> React JS / Node JS / Express.js</p>
                 </div>
               </div>
 
-              <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
+              <div class="col-sm-6 col-md-4 col-xl-3 portfolio-item align-self-end">
                 <a class="portfolio-link" data-toggle="modal" href="#modal2">
                   <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
@@ -258,75 +258,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <img src="ressources/bbm1.png" alt="Bomberman" height="185">
-                  </div>
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Bomberman</h4>
-                  <p class="text-muted">Java</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
-                <a class="portfolio-link" data-toggle="modal" href="#modal3">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <img src="ressources/watcher-icon.png" alt="PHP / HTML / CSS / MySQL" height="162">
-                  </div>
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Site web</h4>
-                  <p class="text-muted">PHP (Laravel) / HTML / CSS / MySQL</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-3 portfolio-item align-self-end">
-                <a class="portfolio-link" data-toggle="modal" href="#modal4">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <img src="ressources/htmlcss.png" alt="HTML & CSS" height="185">
-                  </div>
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Portfolio</h4>
-                  <p class="text-muted">HTML / CSS / JS</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-6 portfolio-item align-self-end">
-                <a class="portfolio-link" data-toggle="modal" href="#modal5">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <img src="ressources/CoN-icon.png" alt="Chronicles of Naruberaria" height="185">
-                  </div>
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Jeu vidéo</h4>
-                  <p class="text-muted">PHP (Laravel) / HTML / CSS / TS (Angular) / MySQL</p>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-md-6 portfolio-item align-self-end">
-                <a class="portfolio-link" data-toggle="modal" href="#modal6">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <img src="ressources/dayte-icon.png" alt="Dayte" height="162">
+                    <img class="project-img project-img-dayte" src="ressources/dayte-icon.png" alt="Dayte">
                   </div>
                 </a>
                 <div class="portfolio-caption">
@@ -335,6 +267,90 @@
                 </div>
               </div>
 
+              <div class="col-sm-6 col-md-4 col-xl-3 portfolio-item align-self-end">
+                <a class="portfolio-link" data-toggle="modal" href="#modal3">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img class="project-img project-img-con" src="ressources/CoN-icon.png" alt="Chronicles of Naruberaria">
+                  </div>
+                </a>
+                <div class="portfolio-caption">
+                  <h4>Jeu vidéo</h4>
+                  <p class="text-muted">PHP (Laravel) / HTML / CSS / TS (Angular) / MySQL</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-3 portfolio-item align-self-end">
+                <a class="portfolio-link" data-toggle="modal" href="#modal4">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="text-center content-header-pf">
+                    <img class="project-img project-img-portfolio" src="ressources/logo.png" alt="HTML & CSS">
+                  </div>
+                </a>
+                <div class="portfolio-caption">
+                  <h4>Portfolio</h4>
+                  <p class="text-muted">HTML / CSS / JS</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-4 portfolio-item align-self-end">
+                <a class="portfolio-link" data-toggle="modal" href="#modal5">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img class="project-img project-img-watcher" src="ressources/watcher-icon.png" alt="PHP / HTML / CSS / MySQL">
+                  </div>
+                </a>
+                <div class="portfolio-caption">
+                  <h4>Site web</h4>
+                  <p class="text-muted">PHP (Laravel) / HTML / CSS / MySQL</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-xl-4 portfolio-item align-self-end">
+                <a class="portfolio-link" data-toggle="modal" href="#modal6">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img class="project-img project-img-bbm" src="ressources/bbm1.png" alt="Bomberman">
+                  </div>
+                </a>
+                <div class="portfolio-caption">
+                  <h4>Bomberman</h4>
+                  <p class="text-muted">Java</p>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-12 col-xl-4 portfolio-item align-self-end">
+                <a class="portfolio-link" data-toggle="modal" href="#modal7">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img class="project-img" src="ressources/iut-icon.png" alt="IUT">
+                  </div>
+                </a>
+                <div class="portfolio-caption">
+                  <h4>Site web</h4>
+                  <p class="text-muted">HTML / CSS / JS</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -344,21 +360,20 @@
             <div class="modal-content">
               <div class="mx-auto">
                 <div class="modal-header">
-                  <h2 class="text-uppercase" style="text-align:center">Site web</h2>
+                  <h2 class="text-uppercase" style="text-align:center">Application de Quiz</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="item-intro text-muted">Refonte du portail national des IUT informatique (FRONT).</p>
-                  <img class="img-fluid d-block mx-auto" src="ressources/webs1.png" alt="Image bientôt disponible">
-                  <p>Au cours du premier semestre du DUT informatique, nous avons réalisé, en trinôme, la refonte du portail national des IUT informatique. Pour cela nous avons utilisé les langages HTML, CSS et JavaScript. Il s'agit du premier projet informatique que j'ai réalisé.</p>
-                  <p>Date : décembre 2018</p>
-                  <div class="btn-project"><a class="btn" role="button" href="https://simven.github.io/iutinfo/index.html" target="_blank">Voir le site</a></div>
-                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/iutinfo" target="_blank">Voir le code</a></div>
+                  <p class="item-intro text-muted">Weka Quiz.</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/weka.png" alt="Image bientôt disponible">
+                  <p>Weka est une application de quiz réalisée en 4 jours en groupe de 5 (à distance). Ainsi, nous avons pu mettre en pratique les méthodes de gestion de projet agiles. Les technologies utilisées sont React JS, Node JS, Express.js ainsi que PostgreSQL pour la gestion de la base de données.</p>
+                  <p>Date : 06 au 09 avril 2021</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/weka" target="_blank">Voir le projet</a></div>
                   <div class="btn-project">
                     <button type="button" class="btn" data-dismiss="modal">
-                      <i class="fas fa-times"></i><span> Fermer</span>
+                      <i class="fas fa-times"></i><span> Fermer </span>
                     </button>
                   </div>
                 </div>
@@ -371,20 +386,20 @@
             <div class="modal-content">
               <div class="mx-auto">
                 <div class="modal-header">
-                  <h2 class="text-uppercase" style="text-align:center">Bomberman</h2>
+                  <h2 class="text-uppercase" style="text-align:center">Site de rencontre</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="item-intro text-muted">Réalisation d'une variante de Bomberman.</p>
-                  <img class="img-fluid d-block mx-auto" src="ressources/bbm.png" alt="Image bientôt disponible">
-                  <p>Ce projet est une variante du jeu-vidéo Bomberman. Il s'agit de la première application que j'ai développée en Java. Ce jeu comporte donc quelques particularités, qui diffèrent du jeu de base.</p>
-                  <p>Date : mai 2019</p>
-                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/bomberman" target="_blank">Voir le code</a></div>
+                  <p class="item-intro text-muted">Dayte.</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/dayte.png" alt="Image bientôt disponible">
+                  <p>En raison de la crise de la COVID-19, les stages de fin de cursus ont été annulés. Ainsi, afin de remplacer celui-ci, nous avons réalisé en binôme une application de site de rencontre (web et mobile) dans les conditions d'une entreprise.</p>
+                  <p>Date : 20 avril au 12 juin 2020</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/dayte" target="_blank">Voir le projet</a></div>
                   <div class="btn-project">
                     <button type="button" class="btn" data-dismiss="modal">
-                      <i class="fas fa-times"></i><span> Fermer</span>
+                      <i class="fas fa-times"></i><span> Fermer </span>
                     </button>
                   </div>
                 </div>
@@ -397,20 +412,20 @@
             <div class="modal-content">
               <div class="mx-auto">
                 <div class="modal-header">
-                  <h2 class="text-uppercase" style="text-align:center">Site web</h2>
+                  <h2 class="text-uppercase" style="text-align:center">Jeu vidéo</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="item-intro text-muted">Marathon du web.</p>
-                  <img class="img-fluid d-block mx-auto" src="ressources/wachr.png" alt="Image bientôt disponible">
-                  <p>Dans le cadre du DUT informatique, nous avons participé à un "marathon du web", pendant lequel nous avons réalisé un site web en 35 heures, en collaboration avec le département MMI. Pour cela, nous avons utilisé PHP et MySQL pour la partie Back-End ainsi que HTML et CSS pour la partie Front-End.</p>
-                  <p>Date : décembre 2019</p>
-                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/marathon_web" target="_blank">Voir le code</a></div>
+                  <p class="item-intro text-muted">Chronicles of Naruberaria.</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/CoN.png" alt="Image bientôt disponible">
+                  <p>Chronicles of Naruberaria est un jeu vidéo réalisé, en équipe de trois, avec la librairie Phaser à partir du framework Angular. Aussi, l'application serveur a été réalisé en PHP avec le framework Laravel. Chronicles of Naruberaria est un side-scrolling shooter comportant quatre niveaux.</p>
+                  <p>Date : 10 février au 2 avril 2020</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/Chronicles-of-Naruberaria" target="_blank">Voir le projet</a></div>
                   <div class="btn-project">
                     <button type="button" class="btn" data-dismiss="modal">
-                      <i class="fas fa-times"></i><span> Fermer</span>
+                      <i class="fas fa-times"></i><span> Fermer </span>
                     </button>
                   </div>
                 </div>
@@ -450,20 +465,20 @@
             <div class="modal-content">
               <div class="mx-auto">
                 <div class="modal-header">
-                  <h2 class="text-uppercase" style="text-align:center">Jeu vidéo</h2>
+                  <h2 class="text-uppercase" style="text-align:center">Site web</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="item-intro text-muted">Chronicles of Naruberaria.</p>
-                  <img class="img-fluid d-block mx-auto" src="ressources/CoN.png" alt="Image bientôt disponible">
-                  <p>Chronicles of Naruberaria est un jeu vidéo réalisé, en équipe de trois, avec la librairie Phaser à partir du framework Angular. Aussi, l'application serveur a été réalisé en PHP avec le framework Laravel. Chronicles of Naruberaria est un side-scrolling shooter comportant quatre niveaux.</p>
-                  <p>Date : 10 février au 2 avril 2020</p>
-                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/Chronicles-of-Naruberaria" target="_blank">Voir le projet</a></div>
+                  <p class="item-intro text-muted">Marathon du web.</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/wachr.png" alt="Image bientôt disponible">
+                  <p>Dans le cadre du DUT informatique, nous avons participé à un "marathon du web", pendant lequel nous avons réalisé un site web en 35 heures, en collaboration avec le département MMI. Pour cela, nous avons utilisé PHP et MySQL pour la partie Back-End ainsi que HTML et CSS pour la partie Front-End.</p>
+                  <p>Date : décembre 2019</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/marathon_web" target="_blank">Voir le code</a></div>
                   <div class="btn-project">
                     <button type="button" class="btn" data-dismiss="modal">
-                      <i class="fas fa-times"></i><span> Fermer </span>
+                      <i class="fas fa-times"></i><span> Fermer</span>
                     </button>
                   </div>
                 </div>
@@ -476,20 +491,47 @@
             <div class="modal-content">
               <div class="mx-auto">
                 <div class="modal-header">
-                  <h2 class="text-uppercase" style="text-align:center">Site de rencontre</h2>
+                  <h2 class="text-uppercase" style="text-align:center">Bomberman</h2>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p class="item-intro text-muted">Dayte.</p>
-                  <img class="img-fluid d-block mx-auto" src="ressources/dayte.png" alt="Image bientôt disponible">
-                  <p>En raison de la crise de la COVID-19, les stages de fin de cursus ont été annulés. Ainsi, afin de remplacer celui-ci, nous avons réalisé en binôme une application de site de rencontre (web et mobile) dans les conditions d'une entreprise.</p>
-                  <p>Date : 20 avril au 12 juin 2020</p>
-                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/dayte" target="_blank">Voir le projet</a></div>
+                  <p class="item-intro text-muted">Réalisation d'une variante de Bomberman.</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/bbm.png" alt="Image bientôt disponible">
+                  <p>Ce projet est une variante du jeu-vidéo Bomberman. Il s'agit de la première application que j'ai développée en Java. Ce jeu comporte donc quelques particularités, qui diffèrent du jeu de base.</p>
+                  <p>Date : mai 2019</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/bomberman" target="_blank">Voir le code</a></div>
                   <div class="btn-project">
                     <button type="button" class="btn" data-dismiss="modal">
-                      <i class="fas fa-times"></i><span> Fermer </span>
+                      <i class="fas fa-times"></i><span> Fermer</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="modal7">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="mx-auto">
+                <div class="modal-header">
+                  <h2 class="text-uppercase" style="text-align:center">Site web</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="item-intro text-muted">Refonte du portail national des IUT informatique (FRONT).</p>
+                  <img class="img-fluid d-block mx-auto" src="ressources/webs1.png" alt="Image bientôt disponible">
+                  <p>Au cours du premier semestre du DUT informatique, nous avons réalisé, en trinôme, la refonte du portail national des IUT informatique. Pour cela nous avons utilisé les langages HTML, CSS et JavaScript. Il s'agit du premier projet informatique que j'ai réalisé.</p>
+                  <p>Date : décembre 2018</p>
+                  <div class="btn-project"><a class="btn" role="button" href="https://simven.github.io/iutinfo/index.html" target="_blank">Voir le site</a></div>
+                  <div class="btn-project"><a class="btn" role="button" href="https://github.com/simven/iutinfo" target="_blank">Voir le code</a></div>
+                  <div class="btn-project">
+                    <button type="button" class="btn" data-dismiss="modal">
+                      <i class="fas fa-times"></i><span> Fermer</span>
                     </button>
                   </div>
                 </div>
@@ -498,13 +540,11 @@
           </div>
         </div>
 
-
         <section id="hobbies">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
                 <h2 class="text-uppercase section-heading">mes centres d'intérêt</h2>
-                <p class="text-muted section-subheading font-italic">Ce que je fais pendant mon temps libre...</p>
               </div>
             </div>
 
@@ -516,7 +556,6 @@
                   <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
                 </span>
                 <h3 class="section-heading">Twitch</h3>
-                <p class="text-muted">J'apprécie de regarder du contenu sur Twitch</p>
               </div>
 
               <!-- FISHING -->
@@ -526,7 +565,6 @@
                   <i class="fas fa-fish fa-stack-1x fa-inverse"></i>
                 </span>
                 <h3 class="section-heading">Pêche</h3>
-                <p class="text-muted">J'aime aller à la pêche lors de mon temps libre</p>
               </div>
 
               <!-- MUSIC -->
@@ -536,7 +574,6 @@
                   <i class="fas fa-music fa-stack-1x fa-inverse"></i>
                 </span>
                 <h3 class="section-heading">Écouter de la musique</h3>
-                <p class="text-muted">J'écoute régulièrement de la musique, plus particulièrement du RAP français et américain</p>
               </div>
 
               <!-- FILMS & SERIES -->
@@ -546,7 +583,6 @@
                   <i class="fas fa-film fa-stack-1x fa-inverse"></i>
                 </span>
                 <h3 class="section-heading">Films & séries</h3>
-                <p class="text-muted">J'aime regarder des films et des séries sur Netflix</p>
               </div>
             </div>
           </div>
@@ -561,17 +597,19 @@
                 <form action="mail.php" method="POST">
                   <div class="row">
                     <div class="col-md-6 col">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Nom">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" name="email" class="form-control" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" name="subject" class="form-control" placeholder="Objet">
-                      </div>
-                      <div class="form-group">
-                        <textarea name="message" rows="6" class="form-control md-textarea" placeholder="Description"></textarea>
+                      <div class="fields">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" name="subject" class="form-control" placeholder="Objet">
+                        </div>
+                        <div class="form-group">
+                          <textarea name="message" rows="6" class="form-control md-textarea" placeholder="Description"></textarea>
+                        </div>
                       </div>
                       <button class="btn btn-xl" type="submit" name="send">Envoyer</button>
                     </div>
@@ -589,7 +627,7 @@
                         </li>
                         <li>
                           <i class="fas fa-envelope"></i>
-                          <p><a class="text-muted" href="mailto:simonvennat@gmail.com"> simonvennat@gmail.com </a></p>
+                          <p><a class="text-muted" href="mailto:simonvennat@gmail.com" target="_blank"> simonvennat@gmail.com </a></p>
                         </li>
                       </ul>
                     </div>
