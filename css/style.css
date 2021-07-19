@@ -350,7 +350,7 @@ section {
 }
 
 .timeline .timeline-event .timeline-event-copy .places {
-  margin-bottom: 1.2em;
+  padding: 0.4rem 0;
 }
 
 .timeline .timeline-event .timeline-event-thumbnail {
